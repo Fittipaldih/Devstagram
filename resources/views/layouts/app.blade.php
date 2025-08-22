@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Devstagram - @yield('title')</title>
+        @vite('resources/css/app.css')
     </head>
     <body>
         <nav>
@@ -12,7 +12,7 @@
             <a href="/tienda">Tienda</a>
             <a href="/nosotros">Nosotros</a>
         </nav>
-        <h1>@yield('title')</h1>
+        <h1 class="text-4xl">@yield('title')</h1>
         <hr>
         @yield('content')
     </body>
